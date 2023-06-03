@@ -16,7 +16,7 @@
       <TabBarItem path="/profile" activeColor="deeppink">
         <i class="fa-solid fa-user"></i>
         <div slot="item-text">我的</div>
-      </TabBarItem> -->
+      </TabBarItem>
     </TabBar>
   </div>
 </template>
