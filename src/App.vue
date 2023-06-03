@@ -6,6 +6,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import { Request } from './network/request';
 
 export default {
   name: 'App',
@@ -16,6 +17,18 @@ export default {
     return {
       data: '你好傻逼'
     }
+  },
+  created() {
+    request({
+      url: '/home/multidata'
+    })
+      .then(res => {
+        console.log(res);
+        this.data = res
+      })
+      .catch(err => {
+        console.log(err);
+      })
   }
 }
 </script>
