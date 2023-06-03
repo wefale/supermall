@@ -6,7 +6,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import { Request } from './network/request';
+import { request } from './network/request';
 
 export default {
   name: 'App',
