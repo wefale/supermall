@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-   
+    {{ data }}
   </div>
 </template>
 
@@ -11,6 +11,11 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+      data: '你好傻逼'
+    }
   }
 }
 </script>
