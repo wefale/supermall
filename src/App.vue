@@ -5,13 +5,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import { request } from './network/request';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    
   },
   data() {
     return {
@@ -33,6 +32,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+@import "./assets/css/base.css";
 
-</style>
+
+</style>>
