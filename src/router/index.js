@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const Home = () => import('views/home/home.vue')
-const Classify = () => import('views/classigy/classify.vue')
+const Classify = () => import('views/classify/classify.vue')
 const Category = () => import('view/category/category.vue')
 const Profile = () => import('view/profile/profile.vue')
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="tabbaritem" @click="itemClick()">
+  <div class="tab-bar-item" @click="itemClick()">
     <div :style="activeStyle">
       <slot></slot>
       <slot name="item-text"></slot>
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style scoped>
-.tabbaritem {
+.tab-bar-item {
   flex: 1;
   color: #555;
   text-align: center;
@@ -55,7 +55,7 @@ export default {
   font-size: 12px;
 }
 
-.tabbaritem i {
+.tab-bar-item i {
   font-size: 20px;
 }
 </style>

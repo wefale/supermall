@@ -16,19 +16,19 @@
       <TabBarItem path="/profile" activeColor="deeppink">
         <i class="fa-solid fa-user"></i>
         <div slot="item-text">我的</div>
-      </TabBarItem> -->
+      </TabBarItem>
     </TabBar>
   </div>
 </template>
 
 <script>
-import TabBar from "components/common/tabbar/TabBar.vue";
-import TabBarItem from "components/common/tabbar/TabBarItem.vue";
+import TabBar from "@/components/common/tabbar/TabBar.vue";
+import TabBarItem from "@/components/common/tabbar/TabBarItem.vue";
 export default {
   name: "MainTabBar",
   components: {
     TabBar,
-    TabBarItem
+    TabBarItem,
   },
 };
 </script>
