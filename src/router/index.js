@@ -3,8 +3,8 @@ import Router from 'vue-router'
 
 const Home = () => import('views/home/home.vue')
 const Classify = () => import('views/classify/classify.vue')
-const Category = () => import('view/category/category.vue')
-const Profile = () => import('view/profile/profile.vue')
+const Category = () => import('views/category/category.vue')
+const Profile = () => import('views/profile/profile.vue')
 
 Vue.use(Router)
 
