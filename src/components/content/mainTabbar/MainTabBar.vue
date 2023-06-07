@@ -1,5 +1,5 @@
 <template>
-  <div id="maintabbar">
+  <div class="main-tab-bar">
     <TabBar>
       <TabBarItem path="/home" activeColor="deeppink">
         <i class="fa-sharp fa-solid fa-house"></i>
@@ -9,7 +9,7 @@
         <i class="fa-solid fa-list"></i>
         <div slot="item-text">分类</div>
       </TabBarItem>
-      <TabBarItem path="/cart" activeColor="deeppink">
+      <TabBarItem path="/category" activeColor="deeppink">
         <i class="fa-solid fa-cart-shopping"></i>
         <div slot="item-text">购物车</div>
       </TabBarItem>
@@ -22,19 +22,19 @@
 </template>
 
 <script>
-import TabBar from "components/common/tabbar/TabBar.vue";
-import TabBarItem from "components/common/tabbar/TabBarItem.vue";
+import TabBar from "@/components/common/tabbar/TabBar.vue";
+import TabBarItem from "@/components/common/tabbar/TabBarItem.vue";
 export default {
   name: "MainTabBar",
   components: {
     TabBar,
-    TabBarItem
+    TabBarItem,
   },
 };
 </script>
 
 <style scoped>
-#maintabbar {
+.main-tab-bar {
   position: fixed;
   bottom: 0;
   left: 0;
