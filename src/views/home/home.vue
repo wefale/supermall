@@ -3,24 +3,21 @@
     <NavBar class="home-nav">
       <div slot="center">购物街</div>
     </NavBar>
-    <Swiper class="home-swiper">
-      <img slot="bg1" src="../../assets/img/home.jpg" alt="" />
-      <img slot="bg2" src="../../assets/img/school.jpg" alt="" />
-      <img slot="bg3" src="../../assets/img/moon.jpg" alt="" />
-    </Swiper>
+    <HomeSwiper class="home-swiper"></HomeSwiper>
   </div>
 </template>
 
 <script>
 import NavBar from "components/common/navbar/NavBar.vue";
+import HomeSwiper from "./childHome/HomeSwiper.vue";
+
 import { getHomeMultidata } from "network/home";
-import Swiper from "components/common/swiper/Swiper.vue";
 
 export default {
   name: "Home",
   components: {
     NavBar,
-    Swiper,
+    HomeSwiper
   },
   data() {
     return {

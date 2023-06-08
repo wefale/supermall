@@ -56,13 +56,14 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 310%;
+  bottom: 0;
+  width: 305%;
 }
 
 .item {
   width: 33%;
-  display: inline-block;
   list-style: none;
+  display: inline-block;
 }
 
 .item img {
