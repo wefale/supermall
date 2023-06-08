@@ -4,9 +4,9 @@
       <div slot="center">购物街</div>
     </NavBar>
     <Swiper class="home-swiper">
-      <div slot="bg" v-for="(item, index) in imgURL" :key=index>
-        <img :src=item alt="" />
-      </div>
+      <img slot="bg1" src="../../assets/img/home.jpg" alt="" />
+      <img slot="bg2" src="../../assets/img/school.jpg" alt="" />
+      <img slot="bg3" src="../../assets/img/moon.jpg" alt="" />
     </Swiper>
   </div>
 </template>
@@ -26,12 +26,7 @@ export default {
     return {
       // result: null
       banners: [],
-      recommends: [],
-      imgURL: [
-        "assets/img/home.jpg",
-        "assets/img/school.jpg",
-        "assets/img/moon.jpg",
-      ],
+      recommends: []
     };
   },
   created() {
