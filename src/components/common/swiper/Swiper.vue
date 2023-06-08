@@ -47,15 +47,13 @@ export default {
 <style scoped>
 .swiper {
   width: 100%;
-  height: 211px;
-  overflow: hidden;
+  aspect-ratio: 16/9;
   position: relative;
+  overflow: hidden;
 }
 
 .images {
   position: absolute;
-  padding: 0;
-  margin: 0;
   top: 0;
   left: 0;
   width: 310%;
@@ -69,11 +67,12 @@ export default {
 
 .item img {
   width: 100%;
+  aspect-ratio: 16/9;
 }
 
 .icon {
   width: 35px;
-  height: 211px;
+  height: 100%;
   background-color: rgba(240, 233, 233, 0.473);
 }
 
