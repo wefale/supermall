@@ -1,6 +1,6 @@
 <template>
   <div id='home-swiper'>
-    <Swiper class="home-swiper">
+    <Swiper>
       <img slot="bg1" src="../../../assets/img/home.jpg" alt="" />
       <img slot="bg2" src="../../../assets/img/school.jpg" alt="" />
       <img slot="bg3" src="../../../assets/img/moon.jpg" alt="" />

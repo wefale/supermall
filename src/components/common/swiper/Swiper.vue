@@ -37,7 +37,6 @@ export default {
     rightClick() {
       let lists = document.querySelectorAll(".item");
       let images = document.querySelector(".images");
-      console.log(lists[0]);
       images.appendChild(lists[0]);
     },
   }
