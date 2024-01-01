@@ -1,14 +1,10 @@
 <template>
   <div class="swiper">
     <ul class="images">
-      <li class="item">
-        <slot name="bg1"></slot>
-      </li>
-      <li class="item">
-        <slot name="bg2"></slot>
-      </li>
-      <li class="item">
-        <slot name="bg3"></slot>
+      <li v-for="(item, index) in banners" :key="index" class="item">
+        <a :href="item.link">
+          <img :src="item.image" :alt="item.title">
+        </a>
       </li>
     </ul>
     <span class="icon left-icon">
@@ -23,10 +19,18 @@
 <script>
 export default {
   name: "Swiper",
-  data(){
+  data() {
     return {
-      mark: null
-    } 
+      mark: null,
+    };
+  },
+  props: {
+    banners: {
+      type: Array,
+      default() {
+        return []
+      }
+    }
   },
   methods: {
     leftClick() {
@@ -39,7 +43,7 @@ export default {
       let images = document.querySelector(".images");
       images.appendChild(lists[0]);
     },
-  }
+  },
 };
 </script> 
 
@@ -96,5 +100,4 @@ export default {
   color: rgb(230, 234, 238);
   font-size: 20px;
 }
-
 </style>

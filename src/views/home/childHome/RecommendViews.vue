@@ -40,7 +40,7 @@ export default {
 .recommend-item img {
   width: 83%;
   aspect-ratio: 1/1;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 
 </style>
