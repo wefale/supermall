@@ -1,15 +1,15 @@
 <template>
   <div id="home">
     <NavBar class="home-nav"><div slot="center">购物街</div></NavBar>
-    <HomeSwiper class="home-swiper"/>
-    <RecommendViews :recommends="recommends"/>
+    <Swiper :banners="banners" />
+    <RecommendViews :recommends="recommends" />
   </div>
 </template>
 
 <script>
 import NavBar from "components/common/navbar/NavBar.vue";
-import HomeSwiper from "./childHome/HomeSwiper.vue";
-import RecommendViews from "./childHome/RecommendViews.vue"
+import Swiper from "components/common/swiper/Swiper.vue";
+import RecommendViews from "./childHome/RecommendViews.vue";
 
 import { getHomeMultidata } from "network/home";
 
@@ -17,13 +17,13 @@ export default {
   name: "Home",
   components: {
     NavBar,
-    HomeSwiper,
+    Swiper,
     RecommendViews
   },
   data() {
     return {
       banners: [],
-      recommends: []
+      recommends: [],
     };
   },
   created() {
@@ -46,9 +46,4 @@ export default {
   background-color: var(--color-tint);
   color: white;
 }
-
-.home-swiper {
-  margin: 0 auto;
-}
-
 </style>
